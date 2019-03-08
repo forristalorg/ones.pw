@@ -25,9 +25,14 @@ function HTMLEncode(str){
 function generatePassword(pwlen,pwpool) {
     pwlen = typeof pwlen !== 'undefined' ? pwlen : 16;
     pwpool = typeof pwpool !== 'undefined' ? pwpool : human;
-    var pwout ="";
-    for (i = 0; i < pwlen; i++) {
-      var pwtemp = pwpool[Math.floor(Math.random() * pwpool.length)];
+    var pwout = "";
+    let randomArray = new Uint32Array(pwlen);
+    window.crypto.getRandomValues(randomArray);
+    var index = 0;
+
+		for (i = 0; i < pwlen; i++) {
+    	index = randomArray[i] % pwpool.length;
+      var pwtemp = pwpool[index];
       if (pwtemp.length > 1 && i > 0){
         if (Math.random() > .5){
           pwtemp = pwtemp.toUpperCase();
@@ -38,7 +43,6 @@ function generatePassword(pwlen,pwpool) {
     }
     return pwout;
 }
-
 
 function fillPassword(element,len,pool){
   var passElement = document.getElementsByClassName(element);
