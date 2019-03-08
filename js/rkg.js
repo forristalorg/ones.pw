@@ -34,7 +34,7 @@ function generatePassword(pwlen,pwpool) {
     	index = randomArray[i] % pwpool.length;
       var pwtemp = pwpool[index];
       if (pwtemp.length > 1 && i > 0){
-        if (Math.random() > .5){
+        if (index % 2){
           pwtemp = pwtemp.toUpperCase();
         }
         pwtemp = " " + pwtemp;
