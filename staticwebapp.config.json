@@ -1,18 +1,20 @@
-{    "routes": [
-    {
-      "route": "/images/*",
-      "headers": {
-        "cache-control": "must-revalidate, max-age=15770000"
-      }
-    },
-    "networking":{
+{
+    "routes": [
+        {
+            "route": "/images/*",
+            "headers": {
+                "cache-control": "must-revalidate, max-age=15770000"
+            }
+        }
+    ],
+    "networking": {
         "forwardingGateway": {
             "allowedForwardedHosts": [
-            "ones.pw",
-            "dev.ones.pw"
+                "ones.pw",
+                "dev.ones.pw"
             ],
             "requiredHeaders": {
-                "X-CDN-TOKEN" : " ${{ secrets.HEADER_TOKEN }}"
+                "X-CDN-TOKEN": " ${{ secrets.HEADER_TOKEN }}"
             }
         }
     }
