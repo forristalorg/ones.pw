@@ -13,8 +13,7 @@ Just clone this repo to any modern webserver and browse to it.
 ## Built With
 
 * [Bootstrap](https://getbootstrap.com/) - The bits that make it look pretty and responsive
-* [jQuery](https://jquery.com/) - The bits that make Bootstrap work
-* [vim](https://www.vim.org) - Because I like starting text editor wars.
+* [VS Code](https://code.visualstudio.com/) - Because I like starting text editor wars.
 
 ## Contributing
 
@@ -32,7 +31,6 @@ This project is licensed under the [Creative Commons Attribution-ShareAlike 4.0 
 
 ## Acknowledgments
 
-* Andrew Wells' [randomkeygen.com](https://randomkeygen.com/)
-* Dropbox's [zxcvbn](https://github.com/dropbox/zxcvbn) package
-* Randall Munroe's [xkcd](https://xkcd.com/936/)
-* [LetsEncrypt](https://letsencrypt.org)
+* Andrew Wells' [randomkeygen.com](https://randomkeygen.com/) for the original idea
+* Dropbox's [zxcvbn](https://github.com/dropbox/zxcvbn) package for rough calculations of entropy
+* Randall Munroe's [xkcd](https://xkcd.com/936/) for the phrase password idea

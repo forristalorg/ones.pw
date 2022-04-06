@@ -1,11 +1,13 @@
-{
-    "forwardingGateway": {
-        "allowedForwardedHosts": [
-          "ones.pw",
-          "dev.ones.pw"
-        ],
-        "requiredHeaders": {
-              "X-Azure-FDID" : " ${{ secrets.HEADER_TOKEN }}"
+{   
+    "networking":{
+        "forwardingGateway": {
+            "allowedForwardedHosts": [
+            "ones.pw",
+            "dev.ones.pw"
+            ],
+            "requiredHeaders": {
+                "X-CDN-TOKEN" : " ${{ secrets.HEADER_TOKEN }}"
+            }
         }
     }
 }
