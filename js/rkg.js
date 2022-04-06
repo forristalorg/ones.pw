@@ -69,5 +69,13 @@ function fillPasswords(){
   e = fillPassword("pstrong-password",5,wordlist);
 }
 
+window.onload = function () {
 
-window.onload = fillPasswords;
+  const pinball = document.getElementsByClassName('fillmeup');
+  for (let i = 0; i < pinball.length; i++) {
+    pinball[i].innerHTML = pinball[i].innerHTML + pinball[i].innerHTML + pinball[i].innerHTML + pinball[i].innerHTML;
+  }
+
+  fillPasswords();
+};
+
