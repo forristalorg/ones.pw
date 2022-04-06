@@ -1,0 +1,11 @@
+{
+    "forwardingGateway": {
+        "allowedForwardedHosts": [
+          "ones.pw",
+          "dev.ones.pw"
+        ],
+        "requiredHeaders": {
+              "X-Azure-FDID" : " ${{ secrets.HEADER_TOKEN }}"
+        }
+    }
+}
