@@ -1,6 +1,7 @@
 {
-"standard": {
-  "ignore": [
-    "js/*"
-    ]
+  "standard": {
+    "ignore": [
+      "js/*"
+      ]
+  }
 }
