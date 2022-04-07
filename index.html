@@ -1,179 +1,180 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	<title>Random Key Generator</title>
-	<meta content="Patrick Forristal" name="author" />
-	<meta content="2017-03-02T16:53:21-0600" name="date" />
-	<meta content="2017 ones.pw" name="copyright" />
-	<meta content="generate random keys, key generator, keygen, codenighter encryption key, encryption keys, wep keys" name="keywords" />
-	<meta content="A simple key generator for all your random needs." name="description" />
-	<meta content="INDEX, FOLLOW" name="ROBOTS" />
-	<link href="css/bootstrap.css" rel="stylesheet" />
-	<link href="css/rkg.css" rel="stylesheet" />
-	
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+  <title>Random Key Generator</title>
+  <meta content="Patrick Forristal" name="author" />
+  <meta content="2017-03-02T16:53:21-0600" name="date" />
+  <meta content="2017 ones.pw" name="copyright" />
+  <meta content="generate random keys, key generator, keygen, codenighter encryption key, encryption keys, wep keys"
+    name="keywords" />
+  <meta content="A simple key generator for all your random needs." name="description" />
+  <meta content="INDEX, FOLLOW" name="ROBOTS" />
+  <link href="css/bootstrap.css" rel="stylesheet" />
+  <link href="css/rkg.css" rel="stylesheet" />
+
+  <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="assets/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="assets/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="assets/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+  <link rel="manifest" href="assets/manifest.json">
   <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
 </head>
+
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-<div class="container">
-<div class="navbar-brand">ones.pw - easy secure password generation</div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <div class="navbar-brand">ones.pw - easy secure password generation</div>
 
-<div id="navbar">
-<ul class="nav navbar-nav navbar-right">
-	<li><button aria-label="refresh" class="btn btn-secondary" onclick="fillPasswords()" type="button">Refresh</button></li>
-</ul>
-</div>
-</div>
-</nav>
+      <div id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><button aria-label="refresh" class="btn btn-secondary" onclick="fillPasswords()"
+              type="button">Refresh</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-12 col-lg-6 col-xxl-4">
-<div class="card">
-<div class="card-header alert-danger">
-<h1>Simple Passwords</h1>
-</div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-lg-6 col-xxl-4">
+        <div class="card">
+          <div class="card-header alert-danger">
+            <h1>Simple Passwords</h1>
+          </div>
 
-<div class="card-body">
-<ul class="list-group">
-	<li class="list-group-item simple-password password">-------------- <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item simple-password password">-------------- <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item simple-password password">-------------- <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item simple-password password">-------------- <span class="badge bg-secondary">-</span></li>
-</ul>
-<br>
-<h6>Good enough for passwords that won&#39;t be subject to an offline bruteforce attack</h6>
-</div>
-</div>
-</div>
+          <div class="card-body">
+            <ul class="list-group fillmeup">
+              <li class="list-group-item simple-password password">-------------- <span
+                  class="badge bg-secondary">-</span></li>
+            </ul>
+            <br>
+            <h6>Good enough for passwords that won&#39;t be subject to an offline bruteforce attack</h6>
+          </div>
+        </div>
+      </div>
 
-<div class="col-md-12 col-lg-6 col-xxl-4">
-<div class="card ">
-<div class="card-header alert-warning">
-<h1>Strong Passwords</h1>
-</div>
+      <div class="col-md-12 col-lg-6 col-xxl-4">
+        <div class="card ">
+          <div class="card-header alert-warning">
+            <h1>Strong Passwords</h1>
+          </div>
 
-<div class="card-body">
-<ul class="list-group">
-	<li class="list-group-item strong-password password">------------------ <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item strong-password password">------------------ <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item strong-password password">------------------ <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item strong-password password">------------------ <span class="badge bg-secondary">-</span></li>
-</ul>
-<br>
-<h6>Nice, strong passwords. Will take longer than the death of our sun to crack with current technology.</h6>
-</div>
-</div>
-</div>
+          <div class="card-body">
+            <ul class="list-group fillmeup">
+              <li class="list-group-item strong-password password">------------------ <span
+                  class="badge bg-secondary">-</span></li>
+            </ul>
+            <br>
+            <h6>Nice, strong passwords. Will take longer than the death of our sun to crack with current
+              technology.</h6>
+          </div>
+        </div>
+      </div>
 
-<div class="col-md-12 col-lg-6 col-xxl-4">
-<div class="card ">
-<div class="card-header alert-success">
-<h1>Very Strong Passwords</h1>
-</div>
+      <div class="col-md-12 col-lg-6 col-xxl-4">
+        <div class="card ">
+          <div class="card-header alert-success">
+            <h1>Very Strong Passwords</h1>
+          </div>
 
-<div class="card-body">
-<ul class="list-group">
-	<li class="list-group-item vstrong-password password">---------------------- <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item vstrong-password password">---------------------- <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item vstrong-password password">---------------------- <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item vstrong-password password">---------------------- <span class="badge bg-secondary">-</span></li>
-</ul>
-<br>
-<h6>These passwords will outlast our universe with current cracking technology.</h6>
-</div>
-</div>
-</div>
+          <div class="card-body">
+            <ul class="list-group fillmeup">
+              <li class="list-group-item vstrong-password password">---------------------- <span
+                  class="badge bg-secondary">-</span></li>
+            </ul>
+            <br>
+            <h6>These passwords will outlast our universe with current cracking technology.</h6>
+          </div>
+        </div>
+      </div>
 
-<div class="col-md-12 col-lg-6 col-xxl-4">
-<div class="card">
-<div class="card-header alert-success">
-<h1>Extra Strong Passwords</h1>
-</div>
+      <div class="col-md-12 col-lg-6 col-xxl-4">
+        <div class="card">
+          <div class="card-header alert-success">
+            <h1>Extra Strong Passwords</h1>
+          </div>
 
-<div class="card-body">
-<ul class="list-group">
-	<li class="list-group-item estrong-password password">------------------------------------ <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item estrong-password password">------------------------------------ <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item estrong-password password">------------------------------------ <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item estrong-password password">------------------------------------ <span class="badge bg-secondary">-</span></li>
-</ul>
-<br>
-<h6>These passwords are incredibly strong.</h6>
-</div>
-</div>
-</div>
+          <div class="card-body">
+            <ul class="list-group fillmeup">
+              <li class="list-group-item estrong-password password">------------------------------------
+                <span class="badge bg-secondary">-</span>
+              </li>
+            </ul>
+            <br>
+            <h6>These passwords are incredibly strong.</h6>
+          </div>
+        </div>
+      </div>
 
 
-<div class="col-md-12 col-lg-6 col-xxl-4">
-<div class="card">
-<div class="card-header alert-success">
-<h1>UUID / GUID</h1>
-</div>
+      <div class="col-md-12 col-lg-6 col-xxl-4">
+        <div class="card">
+          <div class="card-header alert-success">
+            <h1>UUID / GUID</h1>
+          </div>
 
-<div class="card-body">
-<ul class="list-group">
-	<li class="list-group-item uuid-password password">------------------------------------ <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item uuid-password password">------------------------------------ <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item uuid-password password">------------------------------------ <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item uuid-password password">------------------------------------ <span class="badge bg-secondary">-</span></li>
-</ul>
-<br>
-<h6>Useful for when you need a <a href="https://datatracker.ietf.org/doc/html/rfc4122" target="_blank">RFC4122</a> compliant universally unique identifier.</h6>
-</div>
-</div>
-</div>
+          <div class="card-body">
+            <ul class="list-group fillmeup">
+              <li class="list-group-item uuid-password password">------------------------------------
+                <span class="badge bg-secondary">-</span>
+              </li>
+            </ul>
+            <br>
+            <h6>Useful for when you need a <a href="https://datatracker.ietf.org/doc/html/rfc4122"
+                target="_blank">RFC4122</a> compliant universally unique identifier.</h6>
+          </div>
+        </div>
+      </div>
 
-<div class="col-md-12 col-lg-6 col-xxl-4">
-<div class="card">
-<div class="card-header alert-info">
-<h1>Human Friendly Strong Passwords</h1>
+      <div class="col-md-12 col-lg-6 col-xxl-4">
+        <div class="card">
+          <div class="card-header alert-info">
+            <h1>Human Friendly Strong Passwords</h1>
 
-</div>
+          </div>
 
-<div class="card-body">
-<ul class="list-group">
-	<li class="list-group-item pstrong-password password">----- ----- ----- ----- ----- <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item pstrong-password password">----- ----- ----- ----- ----- <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item pstrong-password password">----- ----- ----- ----- ----- <span class="badge bg-secondary">-</span></li>
-	<li class="list-group-item pstrong-password password">----- ----- ----- ----- ----- <span class="badge bg-secondary">-</span></li>
-</ul>
-<br>
-<h6>Very strong phrase based passwords.</h6>
-</div>
-</div>
-</div>
+          <div class="card-body">
+            <ul class="list-group fillmeup">
+              <li class="list-group-item pstrong-password password">----- ----- ----- ----- ----- <span
+                  class="badge bg-secondary">-</span></li>
+            </ul>
+            <br>
+            <h6>Very strong phrase based passwords.</h6>
+          </div>
+        </div>
+      </div>
 
-</div>
-<nav class="navbar fixed-bottom navbar-light bg-light">
-  <div class="container">
-    <div class="col-xl-12">Original idea taken from Andrew Wells&#39; <a href="http://randomkeygen.com">randomkeygen.com</a>. Guess calculation is from the <a href="https://github.com/dropbox/zxcvbn" target="_blank">zxcvbn</a> package.  Word phrase idea from <a href="https://xkcd.com/936/" target="_blank">xkcd</a></div>
-    <div class="col-xl-12">Source can be found on <a href="https://github.com/tradiuz/ones.pw">github</a></div>
+    </div>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <div class="container">
+        <div class="col-xl-12">Original idea taken from Andrew Wells&#39; <a
+            href="http://randomkeygen.com">randomkeygen.com</a>. Guess calculation is from the <a
+            href="https://github.com/dropbox/zxcvbn" target="_blank">zxcvbn</a> package. Word phrase idea
+          from <a href="https://xkcd.com/936/" target="_blank">xkcd</a></div>
+        <div class="col-xl-12">Source can be found on <a href="https://github.com/tradiuz/ones.pw">github</a>
+        </div>
+      </div>
+    </nav>
   </div>
-</nav>
-</div>
 
-<script src="js/bootstrap.js" async></script>
+  <script src="js/bootstrap.js" async></script>
 
-<script type="text/javascript" src="js/zxcvbn.js" async></script>
-<script type="text/javascript" src="js/rkg.js" async></script>
+  <script type="text/javascript" src="js/zxcvbn.js" async></script>
+  <script type="text/javascript" src="js/rkg.js" async></script>
 
 </body>
+
 </html>

@@ -4,3 +4,4 @@
 *.ico
 
 !.gitignore
+!.github
