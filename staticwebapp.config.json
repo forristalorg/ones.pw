@@ -11,7 +11,7 @@
         "forwardingGateway": {
             "allowedForwardedHosts": [
                 "ones.pw",
-                "dev.ones.pw"
+                "nope.pw"
             ],
             "requiredHeaders": {
                 "X-CDN-TOKEN": " ${{ secrets.HEADER_TOKEN }}"
