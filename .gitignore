@@ -1,7 +1,4 @@
 .*
 
-*.png
-*.ico
-
 !.gitignore
 !.github
