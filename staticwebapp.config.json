@@ -14,7 +14,7 @@
                 "nope.pw"
             ],
             "requiredHeaders": {
-                "X-CDN-TOKEN": " ${{ secrets.HEADER_TOKEN }}"
+                "X-CDN-TOKEN": "#{CDN-TOKEN}"
             }
         }
     }
