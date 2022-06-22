@@ -1,10 +1,5 @@
 {
   "navigationFallback": {
     "rewrite": "/index.html"
-  },
-  "forwardingGateway": {
-    "requiredHeaders": {
-      "X-CDN-Token" : "c9ceaa6d-7238-4e1a-bc50-31b0de84ee1c"
-      }
   }
 }
