@@ -1,21 +1,7 @@
 {
-    "routes": [
-        {
-            "route": "/images/*",
-            "headers": {
-                "cache-control": "must-revalidate, max-age=15770000"
-            }
-        }
-    ],
-    "networking": {
-        "forwardingGateway": {
-            "allowedForwardedHosts": [
-                "ones.pw",
-                "nope.pw"
-            ],
-            "requiredHeaders": {
-                "X-CDN-TOKEN": "${{ secrets.HEADER_TOKEN }}"
-            }
-        }
+  "forwardingGateway": {
+  "requiredHeaders": {
+    "X-CDN-Token" : "${{ secrets.HEADER_TOKEN }}"
     }
+  }
 }
