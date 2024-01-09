@@ -13,19 +13,13 @@ on:
 jobs:
   
   build_and_deploy_job:
-    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
+    if: github.event_name == 'workflow_dispatch' || github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
       - uses: actions/checkout@v2
         with:
           submodules: true
-#      - name: Secret Parser - staticwebapp.config.json
-#        uses: jwsi/secret-parser@v1
-#        with:
-#          filename: staticwebapp.config.json
-#          secret-name: HEADER_TOKEN
-#          secret-value:  ${{ secrets.HEADER_TOKEN }} 
       - name: Secret Parser - index.html
         uses: jwsi/secret-parser@v1
         with:
